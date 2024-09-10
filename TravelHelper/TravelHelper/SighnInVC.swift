@@ -7,21 +7,94 @@
 
 import UIKit
 
+
+enum SighnOnWithServices: String, CaseIterable {
+    
+    case enterUserValue = "Введите имя пользователя"
+    case contOnApple = "Продолжить в Apple"
+    case contOnVK = "Продолжитьл в VK"
+    case contOnGoogle = "Продолжить в Google"
+    case contOnFacebook = "Продолжить в Facebook"
+    case contOnInst = "Продолжить в Instagram"
+}
+
+
 final class SighnInVC: UIViewController {
     
-    private let welcomeLabel = UILabel()
-    private let loginTF = UITextField()
-    private let passwordTF = UITextField()
-    private let butSignIn = UIButton()
-    private let butSignUp = UIButton()
-    private let faceIDButton = UIButton()
-
+    // MARK: - PROPERTIES
+    
+    private var namesButton = SighnOnWithServices.allCases
+    private var collectionButtons = [UIButton]()
+    
+    private let registerButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Регистрация", for: .normal)
+        return button
+    }()
+    
+    private let welcomeLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Войдите в ???"
+        return label
+    }()
+    
+    private let registerLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Еще нет аккаунта"
+        return label
+    }()
+    
+    private let stackViewButtons: UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.distribution = .fill
+        stackView.alignment = .fill
+        stackView.spacing = 5
+        return stackView
+    }()
+    
+    
+    // MARK: - LIFE CIRCLE VC
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        setuoUI()
     }
     
+    
+    // MARK: - FUNCTION
+    
+    //Функции для настройки кнопок
+    private func addButtons() {
+        for name in namesButton {
+            let button = UIButton()
+            collectionButtons.append(button)
+            button.setTitle(name.rawValue, for: .normal)
+            buttonSettings(but: button)
+            stackViewButtons.addArrangedSubview(button)
+        }
+    }
+    
+    private func buttonSettings(but: UIButton) {
+        but.translatesAutoresizingMaskIntoConstraints = false
+        but.layer.cornerRadius = 5
+        but.layer.borderWidth = 3
+        but.layer.borderColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+    }
+    
+    private func setuoUI() {
+        
+    }
+    
+    
+    
+    
+    
+    // Старый бред -- может что нибудь пригодится
+    /*
     private func setupUI() {
+        
         view.addSubview(welcomeLabel)
         view.addSubview(loginTF)
         view.addSubview(passwordTF)
@@ -109,5 +182,5 @@ final class SighnInVC: UIViewController {
                 faceIDButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30)
             ])
         }
-  
+  */
 }
