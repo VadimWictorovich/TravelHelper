@@ -7,8 +7,51 @@
 
 import UIKit
 
-class SighnUpVC: UIViewController {
+class RegistrationVC: UIViewController {
 
+    private let welcomeLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Зарегистрироваться в ???"
+        label.textAlignment = .center
+        label.font = UIFont(name: "Helvetica-Bold", size: 28)
+        return label
+    }()
+    
+    private let phoneNumberTextField: UITextField = {
+        let textField = UITextField()
+        textField.placeholder = "Номер телефона"
+        textField.layer.cornerRadius = 10
+        textField.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        textField.layer.borderWidth = 1
+        textField.layer.borderColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
+        return textField
+    }()
+    
+    private let continueButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Продолжить", for: .normal)
+        button.setTitleColor( .white, for: .normal)
+        button.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
+        button.layer.cornerRadius = 10
+        return button
+    }()
+    
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+    }
+    
+    private func setupUI() {
+        view.backgroundColor = .white
+    }
+    
+    
+    
+    // Старая версия VC
+    /*
     private let label = UILabel()
     private let textAboveName = UILabel()
     private let textAboveLogin = UILabel()
@@ -101,4 +144,5 @@ class SighnUpVC: UIViewController {
     private func updateViewModel() {
         
     }
+     */
 }
