@@ -53,13 +53,13 @@ final class SighnInVC: UIViewController {
         stackView.axis = .vertical
         stackView.distribution = .fill
         stackView.alignment = .fill
-        stackView.spacing = 5
+        stackView.spacing = 10
         return stackView
     }()
     
     private let downElementsStackView: UIStackView = {
         let stackView = UIStackView()
-        stackView.translatesAutoresizingMaskIntoConstraints = false
+        //stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .horizontal
         stackView.distribution = .fill
         stackView.alignment = .fill
@@ -73,7 +73,7 @@ final class SighnInVC: UIViewController {
         stackView.axis = .vertical
         stackView.distribution = .fill
         stackView.alignment = .fill
-        stackView.spacing = 20
+        stackView.spacing = 40
         return stackView
     }()
     
@@ -98,6 +98,7 @@ final class SighnInVC: UIViewController {
         generalStackView.addArrangedSubview(downElementsStackView)
         downElementsStackView.addArrangedSubview(registerLabel)
         downElementsStackView.addArrangedSubview(registerButton)
+        setupConstraints()
     }
     
     //Функции для настройки кнопок
@@ -112,8 +113,9 @@ final class SighnInVC: UIViewController {
     }
     
     private func buttonSettings(but: UIButton) {
-        but.translatesAutoresizingMaskIntoConstraints = false
+        //but.translatesAutoresizingMaskIntoConstraints = false
         but.setTitleColor(.black, for: .normal)
+        but.heightAnchor.constraint(equalToConstant: 45).isActive = true
         but.layer.cornerRadius = 5
         but.layer.borderWidth = 3
         but.layer.borderColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
@@ -122,10 +124,10 @@ final class SighnInVC: UIViewController {
     // Constraints
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            generalStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 80),
-            generalStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30),
-            generalStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 7),
-            generalStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -7)
+            generalStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 90),
+            generalStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60),
+            generalStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
+            generalStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15)
         ])
     }
     
