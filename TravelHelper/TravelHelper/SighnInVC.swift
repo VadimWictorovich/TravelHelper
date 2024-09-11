@@ -12,7 +12,7 @@ enum SighnOnWithServices: String, CaseIterable {
     
     case enterUserValue = "Введите имя пользователя"
     case contOnApple = "Продолжить в Apple"
-    case contOnVK = "Продолжитьл в VK"
+    case contOnVK = "Продолжить в VK"
     case contOnGoogle = "Продолжить в Google"
     case contOnFacebook = "Продолжить в Facebook"
     case contOnInst = "Продолжить в Instagram"
@@ -29,25 +29,27 @@ final class SighnInVC: UIViewController {
     private let registerButton: UIButton = {
         let button = UIButton()
         button.setTitle("Регистрация", for: .normal)
+        button.setTitleColor(.systemRed, for: .normal)
         return button
     }()
     
     private let welcomeLabel: UILabel = {
         let label = UILabel()
         label.text = "Войдите в ???"
+        label.textAlignment = .center
         return label
     }()
     
     private let registerLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Еще нет аккаунта"
+        //label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Еще нет аккаунта?"
         return label
     }()
     
-    private let stackViewButtons: UIStackView = {
+    private let buttonsStackView: UIStackView = {
         let stackView = UIStackView()
-        stackView.translatesAutoresizingMaskIntoConstraints = false
+        //stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.distribution = .fill
         stackView.alignment = .fill
@@ -55,15 +57,48 @@ final class SighnInVC: UIViewController {
         return stackView
     }()
     
+    private let downElementsStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .horizontal
+        stackView.distribution = .fill
+        stackView.alignment = .fill
+        stackView.spacing = 2
+        return stackView
+    }()
+    
+    private let generalStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.distribution = .fill
+        stackView.alignment = .fill
+        stackView.spacing = 20
+        return stackView
+    }()
+    
     
     // MARK: - LIFE CIRCLE VC
     override func viewDidLoad() {
         super.viewDidLoad()
-        setuoUI()
+        setupUI()
+        
     }
     
     
     // MARK: - FUNCTION
+    
+    //Функции общих настроек интерфейса
+    private func setupUI() {
+        view.backgroundColor = .white
+        view.addSubview(generalStackView)
+        generalStackView.addArrangedSubview(welcomeLabel)
+        generalStackView.addArrangedSubview(buttonsStackView)
+        addButtons()
+        generalStackView.addArrangedSubview(downElementsStackView)
+        downElementsStackView.addArrangedSubview(registerLabel)
+        downElementsStackView.addArrangedSubview(registerButton)
+    }
     
     //Функции для настройки кнопок
     private func addButtons() {
@@ -72,22 +107,27 @@ final class SighnInVC: UIViewController {
             collectionButtons.append(button)
             button.setTitle(name.rawValue, for: .normal)
             buttonSettings(but: button)
-            stackViewButtons.addArrangedSubview(button)
+            buttonsStackView.addArrangedSubview(button)
         }
     }
     
     private func buttonSettings(but: UIButton) {
         but.translatesAutoresizingMaskIntoConstraints = false
+        but.setTitleColor(.black, for: .normal)
         but.layer.cornerRadius = 5
         but.layer.borderWidth = 3
         but.layer.borderColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
     }
     
-    private func setuoUI() {
-        
+    // Constraints
+    private func setupConstraints() {
+        NSLayoutConstraint.activate([
+            generalStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 80),
+            generalStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30),
+            generalStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 7),
+            generalStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -7)
+        ])
     }
-    
-    
     
     
     
