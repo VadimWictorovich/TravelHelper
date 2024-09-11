@@ -35,8 +35,9 @@ final class SighnInVC: UIViewController {
     
     private let welcomeLabel: UILabel = {
         let label = UILabel()
-        label.text = "Войдите в ???"
+        label.text = "Войти в ???"
         label.textAlignment = .center
+        label.font = UIFont(name: "Helvetica-Bold", size: 28)
         return label
     }()
     
@@ -53,7 +54,7 @@ final class SighnInVC: UIViewController {
         stackView.axis = .vertical
         stackView.distribution = .fill
         stackView.alignment = .fill
-        stackView.spacing = 10
+        stackView.spacing = 8
         return stackView
     }()
     
@@ -73,7 +74,7 @@ final class SighnInVC: UIViewController {
         stackView.axis = .vertical
         stackView.distribution = .fill
         stackView.alignment = .fill
-        stackView.spacing = 40
+        stackView.spacing = 50
         return stackView
     }()
     
@@ -82,7 +83,6 @@ final class SighnInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
     }
     
     
@@ -116,15 +116,15 @@ final class SighnInVC: UIViewController {
         //but.translatesAutoresizingMaskIntoConstraints = false
         but.setTitleColor(.black, for: .normal)
         but.heightAnchor.constraint(equalToConstant: 45).isActive = true
-        but.layer.cornerRadius = 5
-        but.layer.borderWidth = 3
+        but.layer.cornerRadius = 10
+        but.layer.borderWidth = 1
         but.layer.borderColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
     }
     
     // Constraints
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            generalStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 90),
+            //generalStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 90),
             generalStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60),
             generalStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             generalStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15)
