@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C01F72A2C92DB3700074AE2 /* EnterCodeForRegVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C01F7292C92DB3700074AE2 /* EnterCodeForRegVC.swift */; };
 		6C4F87832C163ECE00C98D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4F87822C163ECE00C98D76 /* AppDelegate.swift */; };
 		6C4F878C2C163ED000C98D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C4F878B2C163ED000C98D76 /* Assets.xcassets */; };
 		6C4F878F2C163ED000C98D76 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C4F878E2C163ED000C98D76 /* Base */; };
 		6C4F87972C16403200C98D76 /* SighnInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4F87962C16403200C98D76 /* SighnInVC.swift */; };
-		6C6623C62C29F59500849672 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6623C52C29F59500849672 /* RegistrationVC.swift */; };
+		6C6623C62C29F59500849672 /* EnterPhoneNumberRegVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6623C52C29F59500849672 /* EnterPhoneNumberRegVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C01F7292C92DB3700074AE2 /* EnterCodeForRegVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCodeForRegVC.swift; sourceTree = "<group>"; };
 		6C4F877F2C163ECE00C98D76 /* TravelHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C4F87822C163ECE00C98D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C4F878B2C163ED000C98D76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C4F878E2C163ED000C98D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C4F87902C163ED000C98D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C4F87962C16403200C98D76 /* SighnInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SighnInVC.swift; sourceTree = "<group>"; };
-		6C6623C52C29F59500849672 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
+		6C6623C52C29F59500849672 /* EnterPhoneNumberRegVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneNumberRegVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,8 @@
 			children = (
 				6C4F87982C16404200C98D76 /* AppDelegate */,
 				6C4F87962C16403200C98D76 /* SighnInVC.swift */,
-				6C6623C52C29F59500849672 /* RegistrationVC.swift */,
+				6C6623C52C29F59500849672 /* EnterPhoneNumberRegVC.swift */,
+				6C01F7292C92DB3700074AE2 /* EnterCodeForRegVC.swift */,
 				6C4F878B2C163ED000C98D76 /* Assets.xcassets */,
 				6C4F878D2C163ED000C98D76 /* LaunchScreen.storyboard */,
 				6C4F87902C163ED000C98D76 /* Info.plist */,
@@ -143,8 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C4F87832C163ECE00C98D76 /* AppDelegate.swift in Sources */,
+				6C01F72A2C92DB3700074AE2 /* EnterCodeForRegVC.swift in Sources */,
 				6C4F87972C16403200C98D76 /* SighnInVC.swift in Sources */,
-				6C6623C62C29F59500849672 /* RegistrationVC.swift in Sources */,
+				6C6623C62C29F59500849672 /* EnterPhoneNumberRegVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

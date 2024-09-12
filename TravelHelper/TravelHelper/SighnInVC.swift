@@ -118,7 +118,7 @@ final class SighnInVC: UIViewController {
         but.heightAnchor.constraint(equalToConstant: 45).isActive = true
         but.layer.cornerRadius = 10
         but.layer.borderWidth = 1
-        but.layer.borderColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        but.layer.borderColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
     }
     
     // Constraints
@@ -126,8 +126,8 @@ final class SighnInVC: UIViewController {
         NSLayoutConstraint.activate([
             //generalStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 90),
             generalStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60),
-            generalStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
-            generalStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15)
+            generalStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 17),
+            generalStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -17)
         ])
     }
     
