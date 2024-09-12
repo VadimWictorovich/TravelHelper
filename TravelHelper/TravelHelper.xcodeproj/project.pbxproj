@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C01F72A2C92DB3700074AE2 /* EnterCodeForRegVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C01F7292C92DB3700074AE2 /* EnterCodeForRegVC.swift */; };
 		6C4F87832C163ECE00C98D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4F87822C163ECE00C98D76 /* AppDelegate.swift */; };
-		6C4F87852C163ECE00C98D76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4F87842C163ECE00C98D76 /* SceneDelegate.swift */; };
-		6C4F87872C163ECE00C98D76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4F87862C163ECE00C98D76 /* ViewController.swift */; };
-		6C4F878A2C163ECE00C98D76 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C4F87892C163ECE00C98D76 /* Base */; };
 		6C4F878C2C163ED000C98D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C4F878B2C163ED000C98D76 /* Assets.xcassets */; };
 		6C4F878F2C163ED000C98D76 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C4F878E2C163ED000C98D76 /* Base */; };
+		6C4F87972C16403200C98D76 /* SighnInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4F87962C16403200C98D76 /* SighnInVC.swift */; };
+		6C6623C62C29F59500849672 /* EnterPhoneNumberRegVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6623C52C29F59500849672 /* EnterPhoneNumberRegVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C01F7292C92DB3700074AE2 /* EnterCodeForRegVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCodeForRegVC.swift; sourceTree = "<group>"; };
 		6C4F877F2C163ECE00C98D76 /* TravelHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C4F87822C163ECE00C98D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C4F87842C163ECE00C98D76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6C4F87862C163ECE00C98D76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6C4F87892C163ECE00C98D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C4F878B2C163ED000C98D76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C4F878E2C163ED000C98D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C4F87902C163ED000C98D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C4F87962C16403200C98D76 /* SighnInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SighnInVC.swift; sourceTree = "<group>"; };
+		6C6623C52C29F59500849672 /* EnterPhoneNumberRegVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneNumberRegVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C01F72B2C92E9F900074AE2 /* RegisterationVC */ = {
+			isa = PBXGroup;
+			children = (
+				6C6623C52C29F59500849672 /* EnterPhoneNumberRegVC.swift */,
+				6C01F7292C92DB3700074AE2 /* EnterCodeForRegVC.swift */,
+			);
+			path = RegisterationVC;
+			sourceTree = "<group>";
+		};
 		6C4F87762C163ECE00C98D76 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +65,22 @@
 		6C4F87812C163ECE00C98D76 /* TravelHelper */ = {
 			isa = PBXGroup;
 			children = (
-				6C4F87822C163ECE00C98D76 /* AppDelegate.swift */,
-				6C4F87842C163ECE00C98D76 /* SceneDelegate.swift */,
-				6C4F87862C163ECE00C98D76 /* ViewController.swift */,
-				6C4F87882C163ECE00C98D76 /* Main.storyboard */,
+				6C4F87982C16404200C98D76 /* AppDelegate */,
+				6C4F87962C16403200C98D76 /* SighnInVC.swift */,
+				6C01F72B2C92E9F900074AE2 /* RegisterationVC */,
 				6C4F878B2C163ED000C98D76 /* Assets.xcassets */,
 				6C4F878D2C163ED000C98D76 /* LaunchScreen.storyboard */,
 				6C4F87902C163ED000C98D76 /* Info.plist */,
 			);
 			path = TravelHelper;
+			sourceTree = "<group>";
+		};
+		6C4F87982C16404200C98D76 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				6C4F87822C163ECE00C98D76 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +143,6 @@
 			files = (
 				6C4F878C2C163ED000C98D76 /* Assets.xcassets in Resources */,
 				6C4F878F2C163ED000C98D76 /* Base in Resources */,
-				6C4F878A2C163ECE00C98D76 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +153,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C4F87872C163ECE00C98D76 /* ViewController.swift in Sources */,
 				6C4F87832C163ECE00C98D76 /* AppDelegate.swift in Sources */,
-				6C4F87852C163ECE00C98D76 /* SceneDelegate.swift in Sources */,
+				6C01F72A2C92DB3700074AE2 /* EnterCodeForRegVC.swift in Sources */,
+				6C4F87972C16403200C98D76 /* SighnInVC.swift in Sources */,
+				6C6623C62C29F59500849672 /* EnterPhoneNumberRegVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6C4F87882C163ECE00C98D76 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6C4F87892C163ECE00C98D76 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6C4F878D2C163ED000C98D76 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -218,7 +226,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -297,9 +305,9 @@
 				INFOPLIST_FILE = TravelHelper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,9 +333,9 @@
 				INFOPLIST_FILE = TravelHelper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
