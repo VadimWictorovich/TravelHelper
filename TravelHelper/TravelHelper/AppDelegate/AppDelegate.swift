@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let window = UIWindow()
-        let vc = EnterCodeForRegVC()
+        let vc = SighnInVC()
         let navigation = UINavigationController(rootViewController: vc)
         window.rootViewController = navigation
         window.makeKeyAndVisible()

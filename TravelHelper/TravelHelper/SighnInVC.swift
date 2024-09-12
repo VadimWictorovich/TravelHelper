@@ -74,7 +74,7 @@ final class SighnInVC: UIViewController {
         stackView.axis = .vertical
         stackView.distribution = .fill
         stackView.alignment = .fill
-        stackView.spacing = 50
+        stackView.spacing = 80
         return stackView
     }()
     
@@ -125,7 +125,7 @@ final class SighnInVC: UIViewController {
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             //generalStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 90),
-            generalStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60),
+            generalStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -130),
             generalStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 17),
             generalStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -17)
         ])
