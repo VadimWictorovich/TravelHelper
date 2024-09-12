@@ -37,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C01F72B2C92E9F900074AE2 /* RegisterationVC */ = {
+			isa = PBXGroup;
+			children = (
+				6C6623C52C29F59500849672 /* EnterPhoneNumberRegVC.swift */,
+				6C01F7292C92DB3700074AE2 /* EnterCodeForRegVC.swift */,
+			);
+			path = RegisterationVC;
+			sourceTree = "<group>";
+		};
 		6C4F87762C163ECE00C98D76 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +67,7 @@
 			children = (
 				6C4F87982C16404200C98D76 /* AppDelegate */,
 				6C4F87962C16403200C98D76 /* SighnInVC.swift */,
-				6C6623C52C29F59500849672 /* EnterPhoneNumberRegVC.swift */,
-				6C01F7292C92DB3700074AE2 /* EnterCodeForRegVC.swift */,
+				6C01F72B2C92E9F900074AE2 /* RegisterationVC */,
 				6C4F878B2C163ED000C98D76 /* Assets.xcassets */,
 				6C4F878D2C163ED000C98D76 /* LaunchScreen.storyboard */,
 				6C4F87902C163ED000C98D76 /* Info.plist */,
