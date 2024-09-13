@@ -12,8 +12,7 @@ class EnterCodeForRegVC: UIViewController {
     // ?Timer?
     private var timerValue = 60
     private var timer: Timer?
-    
-    
+    //
     
     private let label: UILabel = {
         let label = UILabel()
