@@ -86,6 +86,7 @@ final class SighnInVC: UIViewController {
     }
     
     
+    
     // MARK: - FUNCTION
     
     //Функции общих настроек интерфейса
